@@ -20,7 +20,7 @@ namespace Zadanie18r4r1
 
         public void GetInfo()
         {
-            var path = Path.GetFullPath("\\cdev_Text.txt");
+            var path = Path.GetFullPath("cdev_Text.txt");
             var fille = new FileInfo(path);
             Console.WriteLine($"\nзагрузился отсюда: {Address}\nимя: {fille.Name} \nразмер: {fille.Length} байт\nрасположение: {fille.FullName}\nформат: {Path.GetExtension(path)}");
         }
